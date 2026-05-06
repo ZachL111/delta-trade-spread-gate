@@ -1,0 +1,32 @@
+{
+  "index": 326,
+  "phase": 2,
+  "batch": 37,
+  "name": "delta-trade-spread-gate",
+  "planned_name": "delta-trade-spread-gate",
+  "language": "Zig",
+  "category": "Trading systems",
+  "goal": "Design a Zig verification harness for spread systems, covering security rule linting, safe and unsafe fixtures, and failure-oriented tests.",
+  "repository_url": "https://github.com/ZachL111/delta-trade-spread-gate",
+  "verification_command": "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/verify.ps1",
+  "model": {
+    "inputs": [
+      "demand",
+      "capacity",
+      "latency",
+      "risk",
+      "weight"
+    ],
+    "threshold": 157,
+    "risk_penalty": 6,
+    "latency_penalty": 2,
+    "weight_bonus": 2,
+    "decision_rule": "accept when score is greater than or equal to threshold, otherwise review"
+  },
+  "quality_gates": [
+    "readme constraint scan",
+    "fixture presence check",
+    "metadata JSON parse",
+    "language verifier"
+  ]
+}
