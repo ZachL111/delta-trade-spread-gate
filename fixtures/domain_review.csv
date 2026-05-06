@@ -1,0 +1,6 @@
+name,focus,signal,slack,drag,confidence,score,lane
+baseline,spread pressure,57,41,29,88,156,ship
+stress,fill risk,65,36,19,68,177,ship
+edge,portfolio drift,64,34,26,63,147,ship
+recovery,quote width,66,36,24,74,170,ship
+stale,spread pressure,59,23,29,77,131,watch

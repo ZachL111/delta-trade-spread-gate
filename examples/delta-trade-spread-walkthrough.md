@@ -1,0 +1,15 @@
+# Delta Trade Spread Gate Walkthrough
+
+I use this file as a small checklist before changing the Zig implementation.
+
+| Case | Focus | Score | Lane |
+| --- | --- | ---: | --- |
+| baseline | spread pressure | 156 | ship |
+| stress | fill risk | 177 | ship |
+| edge | portfolio drift | 147 | ship |
+| recovery | quote width | 170 | ship |
+| stale | spread pressure | 131 | watch |
+
+Start with `stress` and `stale`. They create the widest contrast in this repository's fixture set, which makes them better review anchors than the middle cases.
+
+The next useful expansion would be a malformed fixture around fill risk and quote width.
